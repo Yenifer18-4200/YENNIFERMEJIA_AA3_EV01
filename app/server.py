@@ -4,7 +4,7 @@ from starlette.responses import HTMLResponse
 from starlette.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from app.routers import products, orders  
+from app.routers import products, orders, users
 
 # 1. Initialize the FastAPI application with metadata
 app = FastAPI(
@@ -29,6 +29,7 @@ app.add_middleware(
 # Register the modular routers to the core application
 app.include_router(products.router)
 app.include_router(orders.router)
+app.include_router(users.router)
 
 
 # ---------- HTML VIEWS ----------
