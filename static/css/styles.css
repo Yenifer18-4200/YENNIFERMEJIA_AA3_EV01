@@ -1,0 +1,182 @@
+/* ===========================
+   COLOR PALETTE
+=========================== */
+
+:root{
+
+    --primary:#0EA5E9;
+    --secondary:#BAE6FD;
+    --background:#F0F9FF;
+    --text:#0F172A;
+    --white:#FFFFFF;
+
+}
+
+/* ===========================
+   GENERAL
+=========================== */
+
+body{
+
+    background:var(--background);
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    background:var(--primary);
+
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+    font-size:1.5rem;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    padding:80px 0;
+
+}
+
+.hero-image{
+
+    max-width:300px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#0284C7;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.feature-card{
+
+    border:none;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:20px;
+
+    margin-top:60px;
+
+}
+/* ---------- Dashboard ---------- */
+
+.sidebar{
+
+    width:250px;
+
+    min-height:100vh;
+
+    background:#0EA5E9;
+
+    padding:30px;
+
+}
+
+.sidebar .logo{
+
+    color:white;
+
+    margin-bottom:40px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    border-radius:8px;
+
+}
+
+.sidebar a:hover{
+
+    background:#38BDF8;
+
+}
+
+.content{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+.dashboard-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
