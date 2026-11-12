@@ -102,3 +102,18 @@ invention/
 ├── insert_order_items.py # Logic for linking multiple products to specific orders
 ├── generate_invoice.py   # Business Intelligence module for report generation
 └── main.py               # Interactive CLI menu for orchestration
+
+## Users Module
+
+Endpoints added for user management (FR1):
+
+| Method | Route | Description |
+|---|---|---|
+| POST | /users | Register a user (password is hashed) |
+| POST | /users/login | Validate email and password |
+| GET | /users | List users |
+| GET | /users/{user_id} | Get one user |
+| PUT | /users/{user_id} | Update name and/or role |
+| DELETE | /users/{user_id} | Delete a user |
+
+Run the automated tests with `python -m pytest -v`.
