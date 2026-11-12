@@ -1,13 +1,10 @@
 """User module: registration, login and administration (FR1).
-
 Exposes REST endpoints with FastAPI. Every response omits the password
 so that sensitive information is never exposed.
 """
 
 import sqlite3
-
 from fastapi import APIRouter, HTTPException
-
 from app.database import get_connection
 from app.schemas import UserCreate, UserLogin, UserUpdate
 from app.security import hash_password, verify_password
@@ -30,7 +27,6 @@ def row_to_user(row) -> dict:
 
 
 # --- WRITE ENDPOINTS ---
-
 @router.post("", status_code=201)
 def register_user(user: UserCreate):
     """Register a new user (user story: register customers)."""
