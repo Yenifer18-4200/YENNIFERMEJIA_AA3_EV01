@@ -3,7 +3,7 @@ from datetime import datetime
 
 def create_order():
     # Bridge to the database
-    connection = sqlite3.connect("tienda_virtual.db")
+    connection = sqlite3.connect("virtual_store.db")
     cursor = connection.cursor()
 
     print("///////// Create Order /////////")

@@ -1,7 +1,7 @@
 """Automated tests for the user module.
 
 Each test uses a temporary SQLite database, so the real data in
-tienda_virtual.db is never modified.
+virtual_store.db is never modified.
 """
 
 import sqlite3

@@ -13,7 +13,7 @@ router = APIRouter(
 
 @router.post("")
 def create_order(order: OrderCreate):
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
     
     # --- STEP 1: VALIDATE THE USER ---
@@ -73,7 +73,7 @@ def create_order(order: OrderCreate):
 
 @router.get("")
 def get_order_history():
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
 
     cursor.execute('''SELECT order_id, user_id, date, total_amount FROM "Order" ORDER BY order_id DESC''')

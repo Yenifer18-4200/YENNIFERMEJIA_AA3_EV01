@@ -4,11 +4,11 @@ from generate_invoice import generate_invoice
 from scripts.insert_order import create_order
 from scripts.insert_order_items import add_items_to_order
 from scripts.insert_user import register_user
-from view_inventory import show_inventory
+from inventory_view import show_inventory
 import sqlite3
 
 # 1. Establish the connection to the SQLite database
-connection = sqlite3.connect("tienda_virtual.db")
+connection = sqlite3.connect("virtual_store.db")
 cursor = connection.cursor()
 
 # 2. Add the tables creation logic

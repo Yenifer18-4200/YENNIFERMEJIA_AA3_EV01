@@ -1,7 +1,7 @@
 import sqlite3
  
 def add_items_to_order():
-    connection = sqlite3.connect("tienda_virtual.db")
+    connection = sqlite3.connect("virtual_store.db")
     cursor = connection.cursor()
 
     print("///////// Add Items to Order /////////")

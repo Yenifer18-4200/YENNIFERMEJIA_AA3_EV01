@@ -12,7 +12,7 @@ router = APIRouter(
 
 @router.get("")
 def get_products():
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
     cursor.execute("SELECT product_id, name, price, stock FROM Product")
     rows = cursor.fetchall()
@@ -30,7 +30,7 @@ def get_products():
 
 @router.get("/{product_id}")
 def get_single_product(product_id: int):
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
     cursor.execute("SELECT product_id, name, price, stock FROM Product WHERE product_id = ?", (product_id,))
     row = cursor.fetchone()
@@ -50,7 +50,7 @@ def get_single_product(product_id: int):
 
 @router.post("")
 def create_product(product: ProductCreate):
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
 
     # Check if a product with the same name already exists (case-insensitive check)
@@ -80,7 +80,7 @@ def create_product(product: ProductCreate):
 
 @router.put("/{product_id}")
 def update_product(product_id: int, product_update: ProductUpdate):
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
 
     # Verify that the product exists and fetch current values
@@ -114,7 +114,7 @@ def update_product(product_id: int, product_update: ProductUpdate):
 
 @router.delete("/{product_id}")
 def delete_product(product_id: int):
-    conn = sqlite3.connect("tienda_virtual.db")
+    conn = sqlite3.connect("virtual_store.db")
     cursor = conn.cursor()
 
     # Verify that the product exists

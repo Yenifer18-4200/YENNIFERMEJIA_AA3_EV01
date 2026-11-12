@@ -211,7 +211,7 @@ __marimo__/
 # ==================================================
 
 # Ignore the local SQLite database file to protect test data
-tienda_virtual.db
+virtual_store.db}
 *.db
 *.db-journal
 

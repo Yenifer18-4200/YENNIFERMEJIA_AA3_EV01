@@ -59,7 +59,7 @@ def register_user(user: UserCreate):
     return {
         "message": "User registered successfully",
         "user": {"user_id": new_id, "name": user.name,
-                 "email": user.email.lower(), "role": user.role},
+        "email": user.email.lower(), "role": user.role},
     }
 
 

@@ -1,7 +1,7 @@
 import sqlite3
 
 def generate_invoice(order_id):
-    connection = sqlite3.connect("tienda_virtual.db")
+    connection = sqlite3.connect("virtual_store.db")
     cursor = connection.cursor()
 
     #1. Query to get customer and order header information

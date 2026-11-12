@@ -1,7 +1,7 @@
 import sqlite3
 
 def show_inventory():
-    connection = sqlite3.connect("tienda_virtual.db")
+    connection = sqlite3.connect("virtual_store.db}")
     cursor = connection.cursor()
 
     print("\n" + "-"*15 + " REGISTERED USERS " + "-"*15)

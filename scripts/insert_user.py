@@ -1,7 +1,7 @@
 import sqlite3
 
 def register_user():
-    connection = sqlite3.connect("tienda_virtual.db")
+    connection = sqlite3.connect("virtual_store.db")
     cursor = connection.cursor()
 
     print("///////// User Registration /////////")

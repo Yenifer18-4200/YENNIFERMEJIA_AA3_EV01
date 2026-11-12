@@ -2,8 +2,8 @@
 import sqlite3
 
 def register_product():
-    # Brigde to the database
-    connection = sqlite3.connect("tienda_virtual.db")
+    # Bridge to the database
+    connection = sqlite3.connect("virtual_store.db")
     cursor = connection.cursor()
 
     print("///////// Product Registration //////////")

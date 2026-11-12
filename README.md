@@ -97,7 +97,7 @@ invention/
 ├── templates/            # HTML Jinja2 Templates (dashboard, products, orders, etc.)
 ├── database_design/      # ERD diagram, UML architecture, and software requirements
 ├── database.py           # Initializes the SQLite schema, tables, and relational constraints
-├── view_inventory.py     # Utility to consult existing IDs and stock levels
+├── inventory_view.py     # Utility to consult existing IDs and stock levels
 ├── insert_order.py       # Logic for creating new sales headers in the Order table
 ├── insert_order_items.py # Logic for linking multiple products to specific orders
 ├── generate_invoice.py   # Business Intelligence module for report generation
