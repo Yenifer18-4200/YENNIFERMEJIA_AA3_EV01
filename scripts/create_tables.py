@@ -51,7 +51,7 @@ def create_tables():
     ''')
 
     connection.commit()
-    print("¡Database and tables successfully created following the ERD!")
+    print("Database and tables successfully created according to the ERD!")
     connection.close()
 
 if __name__ == "__main__":
